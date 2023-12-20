@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bazaar-List </title>
+    <style>
+        .me{ 
+
+            margin-left: 100px;
+            font-size: 29px;
+            border: 2px solid rgb(20, 232, 247);
+            background-color: cornsilk;
+            color: rgb(45, 17, 207);
+            height: 180px;
+            width: 400px;
+        }
+        h1{
+            margin-left:100px;
+            color: red;
+        }
+    </style>
+</head>
+<body> 
+    <h1>বর্তমান বাজারদর :</h1>
+    <h3  id="to" class="me"></h3>
+    <script>
+let emon =[{ bagun:"bagun: 2kg =100Tk",tomato :"tomato : 1Kg=70Tk" },
+ {bagun :"bagun: 1Kg=50Tk", tomato:"tomato : 2Kg=140Tk ",bil:" .........Mot Bil=360Tk" }];
+
+emon.forEach(function(yes){
+    document.getElementById("to").innerHTML+= yes.bagun +"<br>" +yes.tomato +"<br>" +yes.bil
+});
+    </script>
+
+</body>
+</html>
