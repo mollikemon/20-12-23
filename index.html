@@ -6,30 +6,40 @@
     <title>bazaar-List </title>
     <style>
         .me{ 
-
             margin-left: 100px;
             font-size: 29px;
             border: 2px solid rgb(20, 232, 247);
             background-color: cornsilk;
             color: rgb(45, 17, 207);
-            height: 180px;
             width: 400px;
+           margin-bottom: -29px;
         }
-        h1{
+        #like{
+           text-align: center;
+            margin-left:100px;
+            color: red;
+        }
+        #tok{
             margin-left:100px;
             color: red;
         }
     </style>
 </head>
 <body> 
-    <h1>বর্তমান বাজারদর :</h1>
-    <h3  id="to" class="me"></h3>
+    <h2  id="tok">বর্তমান বাজারদর :</h2>
+    <h4  id="to" class="">
+     
+    </h4>
     <script>
-let emon =[{ bagun:"bagun: 2kg =100Tk",tomato :"tomato : 1Kg=70Tk" },
- {bagun :"bagun: 1Kg=50Tk", tomato:"tomato : 2Kg=140Tk ",bil:" .........Mot Bil=360Tk" }];
+let emon =[{bagun:"bagun: 2kg =100Tk",tomato :"tomato : 1Kg=70Tk" },
+
+ {bagun :"bagun: 1Kg=50Tk", tomato:"tomato : 2Kg=140Tk ",bil:"Mot Bil=360Tk" }
+];
 
 emon.forEach(function(yes){
-    document.getElementById("to").innerHTML+= yes.bagun +"<br>" +yes.tomato +"<br>" +yes.bil
+ document.getElementById("to").innerHTML+=
+"<h3 class='me'>"+yes.bagun+"</h3> <h3 class='me'>" +yes.tomato+"</h3> <h2 id='like' class='me'> "+yes.bil+"</h2>" 
+
 });
     </script>
 
